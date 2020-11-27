@@ -265,6 +265,9 @@ section,footer{
         margin:0 auto;
         padding: 0 20px;
     }
+    .navBar{
+    padding: 20px 0;
+    }
 }
 @media screen and (max-width: 768px){
     .grid,.grid-2,.grid-3,.grid-4{
