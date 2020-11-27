@@ -1,8 +1,8 @@
 # opacity.min.css
 
 /*!
- * Opacity v4.5.2 (https://getbootstrap.com/)
+ * Opacity v1.0.1 (https://codeopacity.github.io/min.css/opacity.min.css)
  * Copyright 2020-~ The Opacity Authors
  * Copyright 2020 CodeOpacity.
- * Licensed under MIT ()
+ * Licensed under MIT (https://github.com/codeOpacity/min.css/blob/main/LICENSE)
  */
