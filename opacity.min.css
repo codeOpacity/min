@@ -23,13 +23,31 @@ body{
     --smoke:#9c9696;
     --shadow:#ada2a2ad;
     --crimson:#dc143cd7;
-    --blue:#00bfff;
+    --skyblue:#00bfff;
 }
 
 /*color end;*/
-
+/*width*/
+.w25{
+    width: 25%;
+}
+.w33{
+    width: 33%;
+}
+.w50{
+    width: 50%;
+}
+.w75{
+    width: 75%;
+}
+.w100{
+    width: 100%;
+}
+/*width end*/
 /*margin*/
-
+.auto{
+    margin: auto;
+}
 .m-1{
     margin: 0.5rem;
 }
@@ -48,6 +66,26 @@ body{
 .m-6{
     margin: 3rem;
 }
+/*m-y*/
+.my-1{
+    margin: 0.5rem 0;
+}
+.my-2{
+    margin: 1rem 0;
+}
+.my-3{
+    margin: 1.5rem 0;
+}
+.my-4{
+    margin: 2rem 0;
+}
+.my-5{
+    margin: 2.5rem 0;
+}
+.my-6{
+    margin: 3rem 0;
+}
+
 /*padding*/
 .p-1{
     padding: 0.5rem;
@@ -67,6 +105,26 @@ body{
 .p-6{
     padding: 3rem;
 }
+/*y*/
+.py-1{
+    padding: 0.5rem 0;
+}
+.py-2{
+    padding: 1rem 0;
+}
+.py-3{
+    padding: 1.5rem 0;
+}
+.py-4{
+    padding: 2rem 0;
+}
+.py-5{
+    padding: 2.5rem 0;
+}
+.py-6{
+    padding: 3rem 0;
+}
+
 /*padding ends*/
 /*reset*/
 li,ul{
@@ -79,21 +137,108 @@ button{
     border: 0;
     outline: none;
 }
-h1,h2,h3,h4,h5,h6{
-    margin: 0 0 .7rem 0;
-    font-weight: 600;
+h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
+    font-weight: 500;
+    margin-bottom: 0.5rem;
 }
 p{
     color: #838383;
 }
-/*ends reset*/
+/*bootstrap*/
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
 
+h1, .h1 {
+  font-size: 2.5rem;
+}
+
+h2, .h2 {
+  font-size: 2rem;
+}
+
+h3, .h3 {
+  font-size: 1.75rem;
+}
+
+h4, .h4 {
+  font-size: 1.5rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.display-1 {
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-2 {
+  font-size: 5.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-3 {
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.display-4 {
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+
+/*ends reset*/
+/*container*/
 .container{
     width: 100%;
-    max-width: 1160px;
-    padding: 0 30px;
+    padding: 0 15px;
     margin: 0 auto;
 }
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/*end here boot*/
 /*grid system*/
 .grid{
     display: grid;
@@ -107,8 +252,10 @@ p{
 .grid-4{
     grid-template-columns: repeat(4,1fr);
 }
-
-.grid,.grid-2,.grid-3,.grid-4{
+.grid-5{
+    grid-template-columns: repeat(5,1fr);
+}
+.grid,.grid-2,.grid-3,.grid-4,.grid-5{
     display: grid;
     align-items: center;
     justify-content: center;
@@ -117,7 +264,7 @@ p{
 /*grid system ends*/
 
 /*flex-box*/
-.dflx{
+.dflex{
     display: flex;
 }
 .flex{
@@ -137,11 +284,21 @@ p{
 /*button*/
 .btn{
     display: inline-block;
-    padding: .75rem 1rem;
-    transition: .3s;
+    padding: .4rem 1rem;
+    transition: .3s ease;
+    font-size: 1.1rem;
 }
-/*button end*/
-
+.outline{
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+/*order*/
+.order-1{
+    order: -1;
+}
+.order-2{
+    order: 2;
+}
 /*align*/
 .aic{
    align-items: center;
@@ -197,7 +354,7 @@ p{
 
 
 /*img*/
-img, .max{
+.max{
     max-width: 100%;
     height: auto;
 }
@@ -227,13 +384,14 @@ img, .max{
 /*end*/
 
 /*custom*/
-section,footer{
+/*section,footer{
     padding: 4rem 0 2rem 0;
 }
-
+*/
 /*custom*/
 /*nav utilities*/
 .navBar{
+    width: 100%;
     padding: 20px 0!important;
     display: flex;
     align-items: center;
@@ -246,7 +404,7 @@ section,footer{
     list-style: none;
 }
 .navBar a{
-    margin-right: 1.5rem;
+    margin:0 1.6rem;
     font-size: 1.1rem;
 }
 
@@ -258,15 +416,7 @@ section,footer{
 /*end here*/
 
 /*media*/
-@media screen and (max-width: 960px){
-    .container{
-        width: 100%;
-        max-width: 840px;
-        margin:0 auto;
-        padding: 0 20px;
-    }
-    
-}
+
 @media screen and (max-width: 768px){
     .grid,.grid-2,.grid-3,.grid-4{
         grid-template-columns: 1fr;
@@ -275,11 +425,5 @@ section,footer{
     }
     .grid,.grid-2,.grid-3,.grid-4 > div{
         justify-self: center!important;
-    }
-    .flex{
-        flex-direction: column;
-    }
-    .navBar{
-        flex-direction: column;
     }
 }
