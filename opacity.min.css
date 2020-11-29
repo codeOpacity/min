@@ -91,7 +91,9 @@ body{
 .my-6{
     margin: 3rem 0;
 }
-
+.my-7{
+    margin: 4rem 0;
+}
 /*padding*/
 .p-1{
     padding: 0.5rem;
@@ -130,7 +132,9 @@ body{
 .py-6{
     padding: 3rem 0;
 }
-
+py-7{
+   padding: 4rem 0;
+}
 /*padding ends*/
 /*reset*/
 li,ul{
@@ -138,28 +142,24 @@ li,ul{
 }
 a{
     text-decoration: none;
+    color: inherit;
 }
 button{
     border: 0;
     outline: none;
 }
+/*typography*/
+
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
-    font-weight: 500;
+    font-weight: 350;
     margin-bottom: 0.5rem;
 }
 p{
     color: #838383;
 }
-/*bootstrap*/
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  line-height: 1.2;
-}
 
 h1, .h1 {
-  font-size: 2.5rem;
+  font-size: 2.47rem;
 }
 
 h2, .h2 {
@@ -167,7 +167,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: 1.75rem;
+  font-size: 1.8rem;
 }
 
 h4, .h4 {
@@ -182,36 +182,26 @@ h6, .h6 {
   font-size: 1rem;
 }
 
-.lead {
-  font-size: 1.25rem;
+.p,p {
+  font-size: 1.2rem;
   font-weight: 300;
 }
 
-.display-1 {
+.text-1 {
   font-size: 6rem;
-  font-weight: 300;
-  line-height: 1.2;
 }
 
-.display-2 {
+.text-2 {
   font-size: 5.5rem;
-  font-weight: 300;
-  line-height: 1.2;
 }
 
-.display-3 {
+.text-3 {
   font-size: 4.5rem;
-  font-weight: 300;
-  line-height: 1.2;
 }
 
-.display-4 {
+.text-4 {
   font-size: 3.5rem;
-  font-weight: 300;
-  line-height: 1.2;
 }
-
-
 /*ends reset*/
 /*container*/
 .container{
@@ -244,7 +234,8 @@ h6, .h6 {
   }
 }
 
-/*end here boot*/
+/*end here*/
+
 /*grid system*/
 .grid{
     display: grid;
@@ -334,6 +325,9 @@ h6, .h6 {
 .taj{
     text-align: justify;
 }
+.tal{
+   text-align: left;	
+}
 /*end text align*/
 
 
@@ -420,16 +414,17 @@ h6, .h6 {
 }
 
 /*end here*/
-
+.card{
+   box-shadow: 0 0 8px #ccc;
+   border-radius: 7px;
+}
 /*media*/
 
 @media screen and (max-width: 768px){
-    .grid,.grid-2,.grid-3,.grid-4{
+    .grid,.grid-2,.grid-3,.grid-4,.grid-5{
         grid-template-columns: 1fr;
         justify-content: center;
         align-items:center;
     }
-    .grid,.grid-2,.grid-3,.grid-4 > div{
-        justify-self: center!important;
-    }
+   
 }
