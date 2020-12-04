@@ -466,7 +466,7 @@ img,.img,.max{
 /*nav utilities*/
 .navBar{
     width: 100%;
-    padding: 25px 0!important;
+    padding: 20px 0!important;
     display: flex;
     align-items: center;
     justify-content: space-between;
